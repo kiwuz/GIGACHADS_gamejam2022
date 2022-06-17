@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - draggable
+  - UI
   layers:
   - Default
   - TransparentFX

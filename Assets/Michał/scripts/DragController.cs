@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DragController : MonoBehaviour
@@ -79,11 +80,17 @@ public class DragController : MonoBehaviour
         */
 
         if(Input.GetKeyDown(KeyCode.E)){
-            if(heldObject == null){
+            Debug.Log("XD");
+            if(heldObject == null)
+            {
                 RaycastHit hit;
                 if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange)){
                     if(hit.transform.CompareTag("draggable")){
                         PickUpObject(hit.transform.gameObject);
+                    }
+                    if(hit.transform.CompareTag("UI"))
+                    {
+                        Debug.Log("test");
                     }
                     
                 }
@@ -97,6 +104,7 @@ public class DragController : MonoBehaviour
         if(heldObject != null){
             MoveObject();
         }
+
 
 
 
