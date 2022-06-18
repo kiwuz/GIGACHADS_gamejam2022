@@ -18,7 +18,6 @@ public class MapManager : MonoBehaviour
     [SerializeField] TMPro.TextMeshPro puzzleHints;
 
 
-
     private static MapManager _instance;
     public static MapManager Instance { get { return _instance; } }
     private void Awake()
@@ -143,7 +142,7 @@ public class MapManager : MonoBehaviour
         //UpdatePuzzleHint();
     }
 
-    
+
 
 
 
