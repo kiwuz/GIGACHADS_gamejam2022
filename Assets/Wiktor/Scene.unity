@@ -1910,17 +1910,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 948398516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dce3a7505421c1e4e924828202662852, type: 3}
+  m_Script: {fileID: 11500000, guid: 3cdf7bfa0f7c21146906ad075bc4788c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pickupRange: 5
   pickupForce: 150
-  canvas: {fileID: 0}
-  doorCanvas: {fileID: 0}
-  InputField: {fileID: 0}
-  Player: {fileID: 0}
   holdArea: {fileID: 2037482249}
-  message: {fileID: 0}
 --- !u!1 &962684724
 GameObject:
   m_ObjectHideFlags: 0

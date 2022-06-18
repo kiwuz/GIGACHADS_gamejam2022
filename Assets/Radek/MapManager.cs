@@ -102,19 +102,19 @@ public class MapManager : MonoBehaviour
         string txt="Odpowiedzi\n";
         if (prehistory)
         {
-            txt += "Prehistoria: " + "";
+            txt += "Prehistoria: " + "" + "\n";
         }
         if (rome)
         {
-            txt += "Rzym: " + "";
+            txt += "Rzym: " + "Data za³o¿enia rzymu: 04.753 p.n.e."+"\n";
         }
         if (ww2)
         {
-            txt += "WW2: " + "";
+            txt += "WW2: " + "" + "\n";
         }
         if (sciFi)
         {
-            txt += "Sci-Fi: " + "";
+            txt += "Sci-Fi: " + "" + "\n";
         }
     }
 

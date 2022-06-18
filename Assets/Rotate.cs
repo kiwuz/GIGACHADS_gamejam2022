@@ -8,7 +8,7 @@ public class Rotate : MonoBehaviour
     Vector3 rotationSpeed;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.Rotate(rotationSpeed * Time.deltaTime);
     }
