@@ -9,11 +9,8 @@ TagManager:
   - UI
   - Painting
   - Enigma
-<<<<<<< HEAD
-  - Lever
-=======
   - dino
->>>>>>> 58b2e6c6e0d2753a767587ab658de5bcde3851ee
+  - Message
   layers:
   - Default
   - TransparentFX

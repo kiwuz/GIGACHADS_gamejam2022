@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 8e619c92835ca7f4196d78f58a414ca6, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 027dc98253d80d849acc2271be9bffaf, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1910,12 +1910,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 948398516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfe53943907e8b0459ef1f81bc9aafb1, type: 3}
+  m_Script: {fileID: 11500000, guid: dce3a7505421c1e4e924828202662852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pickupRange: 5
   pickupForce: 150
+  canvas: {fileID: 0}
+  doorCanvas: {fileID: 0}
+  InputField: {fileID: 0}
+  Player: {fileID: 0}
   holdArea: {fileID: 2037482249}
+  message: {fileID: 0}
 --- !u!1 &962684724
 GameObject:
   m_ObjectHideFlags: 0
@@ -4039,9 +4044,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Podaj numery z pos\u0105g\xF3w w kolejno\u015Bci:\n niebieski\n zielony\nr\xF3\u017Cowy\n
-    czerwony \n \u017C\xF3\u0142ty\nlub miesi\u0105c i rok za\u0142o\u017Cania miasta
-    do kt\xF3rego prowadz\u0105 wszystkie drogi."
+  m_text: "Podaj numery z pos\u0105g\xF3w w kolejno\u015Bci:\n niebieski\n zielony\nr\xF3\u017Cowy\nczerwony
+    \n \u017C\xF3\u0142ty\nlub miesi\u0105c i rok za\u0142o\u017Cania miasta do kt\xF3rego
+    prowadz\u0105 wszystkie drogi."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
