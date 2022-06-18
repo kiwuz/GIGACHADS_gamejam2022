@@ -57,17 +57,17 @@ public class MenuScripts : MonoBehaviour
 
     public void disableEnigma()
     {
-        //canvas.enabled = false;
+        canvas.enabled = false;
         Cursor.visible = false;
-        canvas.transform.localScale = Vector3.zero;
+        //canvas.transform.localScale = Vector3.zero;
 
 
     }
     public void disableDoors()
     {
-        //doorCanvas.enabled = false;
+        doorCanvas.enabled = false;
         Cursor.visible = false;
-        doorCanvas.transform.localScale = Vector3.zero;
+        //doorCanvas.transform.localScale = Vector3.zero;
 
 
 
