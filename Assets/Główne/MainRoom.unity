@@ -1192,6 +1192,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2389538849530911561, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 09c3ef059b91f2247bd29892e5217550, type: 2}
     - target: {fileID: 3735102090226358198, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -1211,6 +1215,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
   m_PrefabInstance: {fileID: 717934582}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &717934584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4864342965330004576, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
+  m_PrefabInstance: {fileID: 717934582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &717934585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717934584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2284adc1eefaa6498f83db69655b2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 6
+--- !u!64 &717934586
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717934584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1907608370310603259, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
 --- !u!1001 &722646266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1520,6 +1556,7 @@ MonoBehaviour:
   cylinderRome: {fileID: 1614598336}
   cylinderWW2: {fileID: 1088243545}
   cylinderSciFi: {fileID: 1121819260}
+  finalPortal: {fileID: 717934584}
 --- !u!4 &942706484
 Transform:
   m_ObjectHideFlags: 0
