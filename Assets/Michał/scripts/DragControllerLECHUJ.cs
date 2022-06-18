@@ -19,6 +19,12 @@ public class DragControllerLECHUJ : MonoBehaviour
     private InputField InputField;
     [SerializeField] GameObject Player;
     [SerializeField] private Transform holdArea;
+    [SerializeField] private Image image;
+    [SerializeField] private Sprite spriteNew;
+    [SerializeField] private Text Text;
+
+
+
     void Start()
     {
         
@@ -110,8 +116,13 @@ public class DragControllerLECHUJ : MonoBehaviour
                     doorCanvas.enabled = true;
 
                 }
-                
-               
+                if (hit.transform.CompareTag("Message"))
+                {
+                    image.sprite = spriteNew;
+                    Destroy(Text);
+                }
+
+
             }
         }
         if (Input.GetKeyDown(KeyCode.E)){

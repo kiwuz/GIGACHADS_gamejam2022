@@ -16,6 +16,7 @@ TagManager:
   - Rotatable
   - Lever2
   - FinishPoint
+  - LoockedDoor
   layers:
   - Default
   - TransparentFX
