@@ -14,7 +14,7 @@ public class DragControllerMichau : MonoBehaviour
     private LeverController LC;
     void Start()
     {
-        LC = FindObjectOfType<LeverController>();
+        //LC = FindObjectOfType<LeverController>();
     }
 
     void Update()
@@ -29,7 +29,7 @@ public class DragControllerMichau : MonoBehaviour
                         PickUpObject(hit.transform.gameObject);
                     }
                     if(hit.transform.CompareTag("Lever")){
-                        LC.ChangePosition();
+                        hit.transform.GetComponent<LeverController>().ChangePosition();
                     }
                 }
             }

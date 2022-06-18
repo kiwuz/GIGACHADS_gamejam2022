@@ -11,6 +11,8 @@ TagManager:
   - Enigma
   - dino
   - Message
+  - Lever
+  - Mirror
   layers:
   - Default
   - TransparentFX
