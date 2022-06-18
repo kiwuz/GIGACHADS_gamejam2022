@@ -9,10 +9,12 @@ public class LeverController : MonoBehaviour
     [SerializeField] private int currentPosition;
     private Animator m_animator;
     [SerializeField] private Text text;
+    private GameManager GM;
     void Start()
     {
         currentPosition = 0;
         m_animator = transform.GetComponent<Animator>(); 
+        GM = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class LeverController : MonoBehaviour
             m_animator.SetTrigger("LeverON");
             currentPosition = 1;
             text.text = "1";
+            GM.CheckText();
            // transform.rotation.eulerAngles.x
            //transform.rotation = Quaternion.Euler(-45,0,0);
         }
@@ -37,6 +40,7 @@ public class LeverController : MonoBehaviour
             m_animator.SetTrigger("LeverOFF");
             currentPosition = 0;
             text.text = "0";
+            GM.CheckText();
             //transform.rotation = Quaternion.Euler(45,0,0);
 
         }
