@@ -11,74 +11,15 @@ public class DragController : MonoBehaviour
     private GameObject heldObject;
     private Rigidbody heldObjectRb;
     [SerializeField] private Transform holdArea;
+    private LeverController LC;
     void Start()
     {
-        
+        LC = FindObjectOfType<LeverController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-/*
-        //* show popup if draggable 
-        RaycastHit hit2;
-        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit2, pickupRange)){
-            if(hit2.transform.CompareTag("draggable")){
-                //hit2.transform.FindChild("Canvas").gameObject.SetActive(true);
-                hit2.transform.Find("Canvas").gameObject.SetActive(true);
-
-            }
-        }
-        */
-/*
-        //if(Input.GetMouseButtonDown(0)){
-            if(heldObject == null ){
-                RaycastHit hit;
-                if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange)){
-                    if(hit.transform.CompareTag("draggable")){
-                        //hit.transform.Find("Canvas").gameObject.SetActive(true); //show popup
-                        if(Input.GetKeyDown(KeyCode.E)){
-                        PickUpObject(hit.transform.gameObject);
-                        }
-                        else{
-                            DropObject();
-                        }
-                    }
-                    else{
-                        //hit.transform.Find("Canvas").gameObject.SetActive(false); //hide popup
-                    }
-                }
-            }
-            //else{
-              //  DropObject();
-            //}
-        //}
-
-        if(heldObject != null){
-            MoveObject();
-        }
-
-     */  
-/*
-        if(heldObject == null ){
-            RaycastHit hit;
-            if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange)){
-                if(hit.transform.CompareTag("draggable")){
-                    if(Input.GetKeyDown(KeyCode.E)){
-                        PickUpObject(hit.transform.gameObject);
-                        }
-                        else{
-                            DropObject();
-                        }
-                    }
-                }
-            }
-
-        if(heldObject != null){
-            MoveObject();
-        }
-        */
 
         if(Input.GetKeyDown(KeyCode.E)){
             Debug.Log("XD");
@@ -103,6 +44,10 @@ public class DragController : MonoBehaviour
                         //hit.rigidbody.useGravity = true;
                         PickUpObject(hit.transform.gameObject);
 
+                    }
+                    if(hit.transform.CompareTag("Lever")){
+                        Debug.Log("test");
+                        LC.ChangePosition();
                     }
 
                 }

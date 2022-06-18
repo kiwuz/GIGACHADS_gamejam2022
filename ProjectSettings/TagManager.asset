@@ -9,6 +9,7 @@ TagManager:
   - UI
   - Painting
   - Enigma
+  - Lever
   layers:
   - Default
   - TransparentFX
