@@ -95,7 +95,16 @@ public class DragController : MonoBehaviour
                         FindObjectOfType<Rotate>().enabled = false;
                         FindObjectOfType<FirstPersonController>().enabled = false;
                     }
-                    
+                    if (hit.transform.CompareTag("Painting"))
+                    {
+                        Debug.Log("Obraz");
+                        hit.collider.attachedRigidbody.useGravity = true;
+                        Debug.Log(hit.collider.name);
+                        //hit.rigidbody.useGravity = true;
+                        PickUpObject(hit.transform.gameObject);
+
+                    }
+
                 }
             }
             else {

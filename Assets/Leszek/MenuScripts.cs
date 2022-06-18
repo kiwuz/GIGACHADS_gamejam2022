@@ -12,6 +12,13 @@ public class MenuScripts : MonoBehaviour
     private Text Text;
     [SerializeField]
     private Canvas canvas;
+    [SerializeField] GameObject Player;
+
+    private void Start()
+    {
+        canvas.enabled = false;
+
+    }
 
     public void EnigmaChecker()
     {
@@ -28,6 +35,7 @@ public class MenuScripts : MonoBehaviour
     public void disableEnigma()
     {
         canvas.enabled = false;
+        Player.gameObject.SetActive(true);
     }
 
 }
