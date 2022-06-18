@@ -38,19 +38,26 @@ public class MapManager : MonoBehaviour
     public void StartGame()
     {
         ToogleMenu();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        panel.SetActive(false);
 
         Debug.Log("start");
         SceneManager.LoadScene(1);
         play.SetActive(false);
         continueGame.SetActive(true);
+
         //panel.GetComponent<Image>().enabled = true;
     }
 
     public void Continue()
     {
         Debug.Log("continue");
-
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         ToogleMenu();
+        panel.SetActive(false);
+
     }
 
 
@@ -66,6 +73,20 @@ public class MapManager : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
+            Debug.Log(Cursor.lockState);
+
+            if(Cursor.lockState == CursorLockMode.Locked)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+
+
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 
@@ -86,10 +107,26 @@ public class MapManager : MonoBehaviour
             if (GameObject.Find("PlayerCapsule").GetComponent<FirstPersonController>().RotationSpeed == 0) value = 1;
             else value = 0;
 
+            //if (cursorStatus == false)
+            //{
+            //    Cursor.lockState = CursorLockMode.None;
+            //    Cursor.visible = true;
+            //}
+            //else
+            //{
+            //    Cursor.lockState = CursorLockMode.Locked;
+            //    Cursor.visible = false;
+            //}
+            //cursorStatus = !cursorStatus;
+
             GameObject.Find("PlayerCapsule").GetComponent<FirstPersonController>().RotationSpeed = value;
 
         }
-        panel.SetActive(!panel.activeInHierarchy);
+        if(panel.activeInHierarchy==false) panel.SetActive(true);
+
+
+        //        panel.SetActive(!panel.activeInHierarchy);
+        //                panel.SetActive(!panel.activeInHierarchy);
     }
     public void Load(int level)
     {
