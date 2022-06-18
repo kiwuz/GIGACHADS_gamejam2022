@@ -10,7 +10,7 @@ public class Laser : MonoBehaviour
 
 
 
-    private void Start() {
+    private void Awake() {
         //lr = GetComponent<LineRenderer>();
         //lr.SetPosition(0, startPoint.position);
         startLaser = false;
