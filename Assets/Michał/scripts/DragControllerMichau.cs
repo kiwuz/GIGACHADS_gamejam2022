@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class DragController : MonoBehaviour
+public class DragControllerMichau : MonoBehaviour
 {
     [SerializeField] private float pickupRange = 5f;
     [SerializeField] private float pickupForce = 150f;

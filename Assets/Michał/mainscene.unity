@@ -22463,7 +22463,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 391075362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfe53943907e8b0459ef1f81bc9aafb1, type: 3}
+  m_Script: {fileID: 11500000, guid: dce3a7505421c1e4e924828202662852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pickupRange: 5
