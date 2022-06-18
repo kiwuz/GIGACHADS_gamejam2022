@@ -16,6 +16,11 @@ public class OneHandedWalk : StateMachineBehaviour
     {
         //enemyController.navMesh.isStopped = false;
         enemyController.navMesh.SetDestination(enemyController.playerTransform.position);
+        if (animator.GetBool("MotherInRange") == true)
+        {
+            enemyController.navMesh.SetDestination(enemyController.motherTransform.position);
+        }
+        Debug.Log(animator.GetBool("MotherInRange"));
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

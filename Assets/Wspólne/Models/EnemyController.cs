@@ -11,8 +11,9 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField]
     Collider playercollider;
+    [SerializeField]
+    Collider mothercollider;
 
-    
     [HideInInspector]
     public NavMeshAgent navMesh;
     [SerializeField]
@@ -34,6 +35,7 @@ public class EnemyController : MonoBehaviour
     private float attackRange { get { return enemyModel.attackRange; } }
     private LayerMask layerMask { get { return enemyModel.layerMask; } }
     public Transform playerTransform { get { return enemyModel.playerTransform; } set { enemyModel.playerTransform = value; } }
+    public Transform motherTransform { get { return enemyModel.motherTransform; } set { enemyModel.motherTransform = value; } }
     private float maxHealth { get { return enemyModel.maxHealth; } }
 
 
@@ -52,7 +54,8 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         playerTransform = FindObjectOfType<Camera>().transform;
-       
+       motherTransform= GameObject.Find("MamaDino").transform;
+
         Debug.Log(playerTransform);
         navMesh = GetComponent<NavMeshAgent>();
         navMesh.stoppingDistance = enemyModel.stoppingDistance;
@@ -97,7 +100,19 @@ public class EnemyController : MonoBehaviour
             {
                 animator.SetBool("PlayerInRange", false);
             }
-                Debug.Log("wykryto colider gracza");
+            if (colliders.Contains(mothercollider))
+            {
+                animator.SetBool("MotherInRange", true);
+                //animator.SetBool("PlayerInRange", false);
+            }
+            else
+            {
+                animator.SetBool("MotherInRange", false);
+            }
+
+
+
+            //Debug.Log("wykryto colider gracza");
             //wykryto collider gracza
             RaycastHit hit = new RaycastHit();
             Physics.Raycast(eyesPosition.position, playerTransform.position - eyesPosition.position, out hit);
@@ -106,12 +121,12 @@ public class EnemyController : MonoBehaviour
             if (hit.collider.gameObject.CompareTag("Player"))
             {
                 seePlayer = true;
-                Debug.Log("widzi gracza");
+                //Debug.Log("widzi gracza");
             }
             else
             {
                 seePlayer = false;
-                Debug.Log("nie widze gracza");
+                //Debug.Log("nie widze gracza");
             }
         }
         else

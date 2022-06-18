@@ -14,6 +14,7 @@ public class EnemyData : ScriptableObject
     [Header("Player data")]
     public LayerMask layerMask;
     public Transform playerTransform;
+    public Transform motherTransform;
     public GameObject prefab;
 }
 

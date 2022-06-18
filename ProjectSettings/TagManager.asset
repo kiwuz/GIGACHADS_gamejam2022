@@ -9,6 +9,7 @@ TagManager:
   - UI
   - Painting
   - Enigma
+  - dino
   layers:
   - Default
   - TransparentFX

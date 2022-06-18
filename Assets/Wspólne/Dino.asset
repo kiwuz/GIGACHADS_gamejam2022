@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98de078a1ee57a54eb8f02a3e77b5d95, type: 3}
   m_Name: Dino
   m_EditorClassIdentifier: 
-  detectionRadius: 22
+  detectionRadius: 33
   stoppingDistance: 3.06
   attackRange: 1
   maxHealth: 1
