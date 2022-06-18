@@ -24,24 +24,22 @@ public class LeverController : MonoBehaviour
     }
 
     public void ChangePosition(){
+        
         if(currentPosition == 0){
-            //set current pos as a 1
+
              
             m_animator.SetTrigger("LeverON");
             currentPosition = 1;
             text.text = "1";
             GM.CheckText();
-           // transform.rotation.eulerAngles.x
-           //transform.rotation = Quaternion.Euler(-45,0,0);
+
         }
         else if(currentPosition == 1){
-            //set bool as a 0
             currentPosition = 0;
             m_animator.SetTrigger("LeverOFF");
             currentPosition = 0;
             text.text = "0";
             GM.CheckText();
-            //transform.rotation = Quaternion.Euler(45,0,0);
 
         }
     }

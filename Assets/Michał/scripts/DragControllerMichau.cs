@@ -31,6 +31,12 @@ public class DragControllerMichau : MonoBehaviour
                     if(hit.transform.CompareTag("Lever")){
                         hit.transform.GetComponent<LeverController>().ChangePosition();
                     }
+                    if(hit.transform.CompareTag("Lever2")){
+                        hit.transform.GetComponent<LeverController2>().ChangePosition();
+                    }
+                    if(hit.transform.CompareTag("Lever2")){
+                        hit.transform.GetComponent<LeverController2>().ChangePosition();
+                    }
                 }
             }
             else {
