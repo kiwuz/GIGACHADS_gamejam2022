@@ -6,10 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Wiktor/Scene.unity
-    guid: 67353649c3009544da746ea7f1a02a3c
+    path: Assets/MainMenu/MainMenu.unity
+    guid: 947b5d1dadf0d054e99a596a85f98901
+  - enabled: 1
+    path: "Assets/G\u0142\xF3wne/MainRoom.unity"
+    guid: 63ba3b9957d02cb419e18cf979272593
+  - enabled: 1
+    path: "Assets/Leszek/2 Wojna \u015Awiatowa.unity"
+    guid: c2aea6be49b596f4992a956dd73f3d7e
   - enabled: 1
     path: Assets/Radek/prehistoria.unity
     guid: a6ca6b14bcbe55b41a47640b7d72afb1
+  - enabled: 1
+    path: Assets/Wiktor/Scene.unity
+    guid: 67353649c3009544da746ea7f1a02a3c
+  - enabled: 1
+    path: "Assets/Micha\u0142/mainscene.unity"
+    guid: 8079a4f3612105043b517d146ff5c16a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
