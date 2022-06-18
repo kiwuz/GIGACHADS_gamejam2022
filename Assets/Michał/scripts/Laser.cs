@@ -3,20 +3,28 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     private int maxBounces = 5;
-    private LineRenderer lr;
+    public LineRenderer lr;
     [SerializeField] private Transform startPoint;
     [SerializeField] private bool reflectOnlyMirror;
+    public bool startLaser;
 
 
 
     private void Start() {
-        lr = GetComponent<LineRenderer>();
-        lr.SetPosition(0, startPoint.position);
+        //lr = GetComponent<LineRenderer>();
+        //lr.SetPosition(0, startPoint.position);
+        startLaser = false;
 
     }
 
     private void Update() {
-        CastLaser(transform.position, -transform.forward);
+
+        if(startLaser){
+            lr.enabled = true;
+            CastLaser(transform.position, -transform.forward);
+        } 
+
+        if(!startLaser) lr.enabled = false;
     }
 
     private void CastLaser(Vector3 position, Vector3 direction){

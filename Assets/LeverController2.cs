@@ -1,26 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-
-public class LeverController : MonoBehaviour
+public class LeverController2 : MonoBehaviour
 {
+
+    public Laser LSR;
     [SerializeField] private int currentPosition;
+    [SerializeField] private GameObject light;
     private Animator m_animator;
-    [SerializeField] private Text text;
-    private GameManager GM;
+    // Start is called before the first frame update
     void Start()
     {
-        currentPosition = 0;
-        m_animator = transform.GetComponent<Animator>(); 
-        GM = FindObjectOfType<GameManager>();
+        light.SetActive(false);
+        //LSR = transform.GetComponent<Laser>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        m_animator = transform.GetComponent<Animator>(); 
     }
 
     public void ChangePosition(){
@@ -30,17 +29,23 @@ public class LeverController : MonoBehaviour
              
             m_animator.SetTrigger("LeverON");
             currentPosition = 1;
-            text.text = "1";
-            GM.CheckText();
+            LSR.startLaser = true;
+            light.SetActive(true);
+            Debug.Log("Laser ON");
+            
+
 
         }
         else if(currentPosition == 1){
             currentPosition = 0;
             m_animator.SetTrigger("LeverOFF");
-            currentPosition = 0;
-            text.text = "0";
-            GM.CheckText();
+            LSR.startLaser = false;
+            Debug.Log("laser OFF");
+            light.SetActive(false);
+
 
         }
     }
+
+
 }
