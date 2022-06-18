@@ -19,6 +19,8 @@ public class DragController : MonoBehaviour
     private InputField InputField;
     [SerializeField] GameObject Player;
     [SerializeField] private Transform holdArea;
+    [SerializeField]
+    GameObject message;
     void Start()
     {
         
@@ -134,13 +136,18 @@ public class DragController : MonoBehaviour
                         Debug.Log(hit.collider.name);
                         //hit.rigidbody.useGravity = true;
                         PickUpObject(hit.transform.gameObject);
-
+                    }
+                    if (hit.transform.CompareTag("Message"))
+                    {
+                        Debug.Log("message");
+                        message.SetActive(true);                        
                     }
 
                 }
             }
             else {
                 DropObject();
+                message.SetActive(false);
 
             }
 
