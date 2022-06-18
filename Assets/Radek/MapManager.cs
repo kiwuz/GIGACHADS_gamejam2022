@@ -1,14 +1,23 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class MapManager : MonoBehaviour
 {
     [SerializeField] GameObject panel;
     [SerializeField] GameObject play;
     [SerializeField] GameObject continueGame;
+
+    [SerializeField] public bool prehistory;
+    [SerializeField] public bool rome;
+    [SerializeField] public bool ww2;
+    [SerializeField] public bool sciFi;
+    [SerializeField] TMPro.TextMeshPro puzzleHints;
+
+
 
     private static MapManager _instance;
     public static MapManager Instance { get { return _instance; } }
@@ -34,7 +43,7 @@ public class MapManager : MonoBehaviour
         SceneManager.LoadScene(1);
         play.SetActive(false);
         continueGame.SetActive(true);
-
+        //panel.GetComponent<Image>().enabled = true;
     }
 
     public void Continue()
@@ -66,8 +75,17 @@ public class MapManager : MonoBehaviour
 
     private void ToogleMenu()
     {
-        if (GameObject.Find("PlayerFollowCamera"))
-            GameObject.Find("PlayerFollowCamera").GetComponent<Cinemachine.CinemachineVirtualCamera>().enabled = panel.activeInHierarchy;
+        //if (GameObject.Find("PlayerCapsule"))
+        //    GameObject.Find("PlayerCapsule").transform.Find("MainCamera").GetComponent<Cinemachine.CinemachineBrain>().enabled = panel.activeInHierarchy;
+        if (GameObject.Find("PlayerCapsule"))
+        {
+            int value;
+            if (GameObject.Find("PlayerCapsule").GetComponent<FirstPersonController>().RotationSpeed == 0) value = 1;
+            else value = 0;
+
+            GameObject.Find("PlayerCapsule").GetComponent<FirstPersonController>().RotationSpeed = value;
+
+        }
         panel.SetActive(!panel.activeInHierarchy);
     }
     public void Load(int level)
@@ -78,4 +96,47 @@ public class MapManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    
+    private void UpdatePuzzleHint()
+    {
+        string txt="Odpowiedzi\n";
+        if (prehistory)
+        {
+            txt += "Prehistoria: " + "";
+        }
+        if (rome)
+        {
+            txt += "Rzym: " + "";
+        }
+        if (ww2)
+        {
+            txt += "WW2: " + "";
+        }
+        if (sciFi)
+        {
+            txt += "Sci-Fi: " + "";
+        }
+    }
+
+    public void ChangePrehistory()
+    {
+        prehistory = true;
+        UpdatePuzzleHint();
+    }
+    public void ChangeRome()
+    {
+        rome = true;
+        UpdatePuzzleHint();
+    }
+    public void ChangeWW2()
+    {
+        ww2 = true;
+        UpdatePuzzleHint();
+    }
+    public void ChangeSciFi()
+    {
+        sciFi = true;
+        UpdatePuzzleHint();
+    }
+
 }
