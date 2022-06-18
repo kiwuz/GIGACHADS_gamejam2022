@@ -123,23 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &45829695 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9005220659476430823, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
-  m_PrefabInstance: {fileID: 2080598304}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &45829696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45829695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfe53943907e8b0459ef1f81bc9aafb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &45829700 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
@@ -246,7 +229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
       propertyPath: m_Name
-      value: Portal
+      value: Rome
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -779,7 +762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
       propertyPath: m_Name
-      value: Portal (2)
+      value: WW2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1189,11 +1172,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
       propertyPath: m_Name
-      value: Portal (1)
+      value: Prehistory
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365132098506396400, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1365132098506396400, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1388,6 +1375,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &942706482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 942706484}
+  - component: {fileID: 942706483}
+  m_Layer: 0
+  m_Name: DisableOnLoad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &942706483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942706482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20149c761412981499449a0de8d234dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalPrehistory: {fileID: 140727650}
+  portalRome: {fileID: 474334273}
+  portalWW2: {fileID: 618262021}
+  portalSciFi: {fileID: 683588008}
+--- !u!4 &942706484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942706482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25.897308, y: -10.8051605, z: 15.113925}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &979204988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7146521406498821007, guid: 30078dccacc794d4988dd1f650a5e75e, type: 3}
@@ -1475,7 +1509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
       propertyPath: m_Name
-      value: Portal (3)
+      value: SciFi
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fff0efcf43a060740982cb1dc73379fe, type: 3}
       propertyPath: m_StaticEditorFlags

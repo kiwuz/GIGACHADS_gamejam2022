@@ -56,7 +56,7 @@ public class EnemyController : MonoBehaviour
         playerTransform = FindObjectOfType<Camera>().transform;
        motherTransform= GameObject.Find("MamaDino").transform;
 
-        Debug.Log(playerTransform);
+        //Debug.Log(playerTransform);
         navMesh = GetComponent<NavMeshAgent>();
         navMesh.stoppingDistance = enemyModel.stoppingDistance;
         animator = GetComponent<Animator>();
