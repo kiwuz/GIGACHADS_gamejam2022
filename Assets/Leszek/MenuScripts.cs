@@ -45,7 +45,7 @@ public class MenuScripts : MonoBehaviour
 
     public void DoorChecker()
     {
-        if (doorText.text == "200418892137")
+        if (doorText.text == "180418892137")
         {
             animation.Play();
           
@@ -59,6 +59,7 @@ public class MenuScripts : MonoBehaviour
     {
         canvas.enabled = false;
         Cursor.visible = false;
+        //canvas.transform.localScale = Vector3.zero;
 
 
     }
@@ -66,6 +67,7 @@ public class MenuScripts : MonoBehaviour
     {
         doorCanvas.enabled = false;
         Cursor.visible = false;
+        //doorCanvas.transform.localScale = Vector3.zero;
 
 
 

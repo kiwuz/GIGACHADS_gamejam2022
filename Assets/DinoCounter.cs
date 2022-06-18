@@ -6,6 +6,7 @@ public class DinoCounter : MonoBehaviour
 {
     [SerializeField] int dinos;
     [SerializeField] int foundDinos;
+    [SerializeField] GameObject portal;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -28,7 +29,10 @@ public class DinoCounter : MonoBehaviour
     {
         if (dinos <= foundDinos)
         {
-            Debug.Log("zsad");
+            //Debug.Log("zsad");
+            MapManager.Instance.prehistory = true;
+            portal.SetActive(true);
+
         }
 
     }

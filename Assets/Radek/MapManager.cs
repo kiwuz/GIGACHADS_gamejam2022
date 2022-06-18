@@ -39,6 +39,7 @@ public class MapManager : MonoBehaviour
     public void StartGame()
     {
         ToogleMenu();
+
         Debug.Log("start");
         SceneManager.LoadScene(1);
         play.SetActive(false);
@@ -66,6 +67,9 @@ public class MapManager : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
             Debug.Log("esc");
             if(SceneManager.GetActiveScene().buildIndex!=0) ToogleMenu();
         }
@@ -121,22 +125,26 @@ public class MapManager : MonoBehaviour
     public void ChangePrehistory()
     {
         prehistory = true;
-        UpdatePuzzleHint();
+        //UpdatePuzzleHint();
     }
     public void ChangeRome()
     {
         rome = true;
-        UpdatePuzzleHint();
+        //UpdatePuzzleHint();
     }
     public void ChangeWW2()
     {
         ww2 = true;
-        UpdatePuzzleHint();
+        //UpdatePuzzleHint();
     }
     public void ChangeSciFi()
     {
         sciFi = true;
-        UpdatePuzzleHint();
+        //UpdatePuzzleHint();
     }
+
+    
+
+
 
 }

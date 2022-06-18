@@ -15,6 +15,7 @@ public class PuzzleManager : MonoBehaviour
     {
         if (password.Equals(text))
         {
+            MapManager.Instance.ChangeRome();
             portal.SetActive(true);
         }
     }
