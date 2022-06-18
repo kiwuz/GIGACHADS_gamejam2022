@@ -12,11 +12,17 @@ public class MenuScripts : MonoBehaviour
     private Text Text;
     [SerializeField]
     private Canvas canvas;
-   
+    [SerializeField]
+    private Canvas doorCanvas;
+    [SerializeField]
+    private InputField doorText;
+    [SerializeField]
+    private Animation animation;
 
     private void Start()
     {
         canvas.enabled = false;
+        doorCanvas.enabled = false;
 
     }
 
@@ -24,7 +30,7 @@ public class MenuScripts : MonoBehaviour
     {
         if (inputField.text == "mein fuhrer")
         {
-            Text.text = "Tu bedzie haslo";
+            Text.text = "2137";
         }
         else
         {
@@ -32,10 +38,30 @@ public class MenuScripts : MonoBehaviour
         }
     }
 
+    public void DoorChecker()
+    {
+        if (doorText.text == "180418892137")
+        {
+            animation.Play();
+          
+            disableDoors();
+        }
+        
+    }
+
     public void disableEnigma()
     {
         canvas.enabled = false;
-       
+        Cursor.visible = false;
+
+
+    }
+    public void disableDoors()
+    {
+        doorCanvas.enabled = false;
+        Cursor.visible = false;
+
+
     }
 
 }
