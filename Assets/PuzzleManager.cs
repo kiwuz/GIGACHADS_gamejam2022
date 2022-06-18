@@ -9,12 +9,13 @@ public class PuzzleManager : MonoBehaviour
     string password;
     [SerializeField]
     TextMeshProUGUI textBoard;
+    [SerializeField]
+    GameObject portal;
     public void checkPassowrd(string text)
     {
         if (password.Equals(text))
         {
-            Debug.Log("You Win");
-            textBoard.text="Portal otworzony na dachu";
+            portal.SetActive(true);
         }
     }
 }
