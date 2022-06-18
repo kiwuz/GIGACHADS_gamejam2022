@@ -2086,7 +2086,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRange: 5
   pickupForce: 150
+  canvas: {fileID: 0}
+  doorCanvas: {fileID: 0}
+  InputField: {fileID: 0}
+  Player: {fileID: 0}
   holdArea: {fileID: 1838186900}
+  message: {fileID: 0}
 --- !u!1 &404169593
 GameObject:
   m_ObjectHideFlags: 0

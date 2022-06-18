@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DragController : MonoBehaviour
+public class DragControllerWiki : MonoBehaviour
 {
     [SerializeField] private float pickupRange = 5f;
     [SerializeField] private float pickupForce = 150f;
