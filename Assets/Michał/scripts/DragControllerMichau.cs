@@ -45,8 +45,8 @@ public class DragControllerMichau : MonoBehaviour
 
                         
                         if(hit.transform.parent.localRotation.eulerAngles.z % 90 == 0){
-                            hit.transform.parent.DORotate(new Vector3(hit.transform.parent.rotation.eulerAngles.x,hit.transform.parent.rotation.eulerAngles.y, hit.transform.parent.rotation.eulerAngles.z+ 90),  0.5f,RotateMode.Fast);
-
+                         
+                            hit.transform.parent.DORotate(new Vector3(hit.transform.parent.rotation.eulerAngles.x, hit.transform.parent.rotation.eulerAngles.y, hit.transform.parent.rotation.eulerAngles.z + 90),  0.1f,RotateMode.Fast);
                         }
 
                     }
