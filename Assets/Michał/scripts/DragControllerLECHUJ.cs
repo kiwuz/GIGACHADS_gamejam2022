@@ -110,6 +110,8 @@ public class DragControllerLECHUJ : MonoBehaviour
                     doorCanvas.enabled = true;
 
                 }
+                
+               
             }
         }
         if (Input.GetKeyDown(KeyCode.E)){

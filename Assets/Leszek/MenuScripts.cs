@@ -18,9 +18,14 @@ public class MenuScripts : MonoBehaviour
     private InputField doorText;
     [SerializeField]
     private Animation animation;
+    [SerializeField]
+    private GameObject lever;
+    
+    
 
     private void Start()
     {
+        lever.SetActive(false);
         canvas.enabled = false;
         doorCanvas.enabled = false;
 
@@ -45,21 +50,25 @@ public class MenuScripts : MonoBehaviour
             animation.Play();
           
             disableDoors();
+            lever.SetActive(true);
         }
         
     }
 
     public void disableEnigma()
     {
-        canvas.enabled = false;
+        //canvas.enabled = false;
         Cursor.visible = false;
+        canvas.transform.localScale = Vector3.zero;
 
 
     }
     public void disableDoors()
     {
-        doorCanvas.enabled = false;
+        //doorCanvas.enabled = false;
         Cursor.visible = false;
+        doorCanvas.transform.localScale = Vector3.zero;
+
 
 
     }
