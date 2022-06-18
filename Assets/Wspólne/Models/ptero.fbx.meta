@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: 16331c0018daa7f4aa1f3a3cbff37a7e
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -1010326335418237161
+    second: skeletal.3|PixCap Animation_Create your fantasy land
+  - first:
+      74: -6790592874943635461
+    second: skeletal.3|PixCap Animation_Flying pterodactyl
+  - first:
+      74: 2842091173660982287
+    second: skeletal.3|PixCap Animation_Flying pterodactyl Skeleton
+  - first:
+      74: -7169462006765587621
+    second: skeletal.3|PixCap Animation_geo.1
+  - first:
+      74: -4106200568003243272
+    second: skeletal.3|PixCap Animation_green_landscape.1
+  - first:
+      74: 729354288695583140
+    second: skeletal.3|PixCap Animation_node2
+  - first:
+      74: -7861888097867199872
+    second: skeletal.3|PixCap Animation_node3
+  - first:
+      74: -3266562527561148123
+    second: skeletal.3|PixCap Animation_pterodactyl.2
+  - first:
+      74: 6281650714214996988
+    second: skeletal.3|PixCap Animation_RootNode.0
+  - first:
+      74: -7718364255832365983
+    second: skeletal.3|PixCap Animation_skeletal.3
+  - first:
+      74: 2861604495907884782
+    second: Flying pterodactyl|PixCap Animation_Create your fantasy land
+  - first:
+      74: 2562396636725979507
+    second: Flying pterodactyl|PixCap Animation_Flying pterodactyl
+  - first:
+      74: -5480889346767393206
+    second: Flying pterodactyl|PixCap Animation_Flying pterodactyl Skeleton
+  - first:
+      74: -7631158137238760372
+    second: Flying pterodactyl|PixCap Animation_geo.1
+  - first:
+      74: -8600413779742237215
+    second: Flying pterodactyl|PixCap Animation_green_landscape.1
+  - first:
+      74: 1955990310024994815
+    second: Flying pterodactyl|PixCap Animation_node2
+  - first:
+      74: -1633270181709365106
+    second: Flying pterodactyl|PixCap Animation_node3
+  - first:
+      74: -2916114893865304217
+    second: Flying pterodactyl|PixCap Animation_pterodactyl.2
+  - first:
+      74: 4590358925420744357
+    second: Flying pterodactyl|PixCap Animation_RootNode.0
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 1
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 1
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

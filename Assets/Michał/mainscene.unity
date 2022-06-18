@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3821760
 Transform:
   m_ObjectHideFlags: 0
@@ -26498,7 +26498,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: b1f35939060899f418daddb891ef6407, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -76884,7 +76884,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1750755003
 Transform:
   m_ObjectHideFlags: 0
@@ -93915,7 +93915,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896071923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.78000003, y: 0, z: 3.7140002}
+  m_LocalPosition: {x: 0.5, y: 0, z: 3.7140002}
   m_LocalScale: {x: 0.24999999, y: 0.24999999, z: 0.24999999}
   m_Children:
   - {fileID: 2118231785}
@@ -98686,7 +98686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2042262849
 Transform:
   m_ObjectHideFlags: 0
@@ -103171,7 +103171,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090430381}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.18, y: 0, z: 3.7140002}
+  m_LocalPosition: {x: 4.5, y: 0, z: 3.7140002}
   m_LocalScale: {x: 0.24999999, y: 0.24999999, z: 0.24999999}
   m_Children:
   - {fileID: 640866612}
@@ -103370,7 +103370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104973732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0, z: 3.7140002}
+  m_LocalPosition: {x: 2.5, y: 0, z: 3.7140002}
   m_LocalScale: {x: 0.24999999, y: 0.24999999, z: 0.24999999}
   m_Children:
   - {fileID: 688952559}
@@ -106238,7 +106238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2134738828
 Transform:
   m_ObjectHideFlags: 0

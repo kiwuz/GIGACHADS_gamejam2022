@@ -4039,9 +4039,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Podaj numery z pos\u0105g\xF3w w kolejno\u015Bci:\n niebieski\n zielony\n
-    r\xF3\u017Cowy\n czerwony \n \u017C\xF3\u0142ty\nlub miesi\u0105c i rok za\u0142o\u017Cania
-    miasta do kt\xF3rego prowadz\u0105 wszystkie drogi."
+  m_text: "Podaj numery z pos\u0105g\xF3w w kolejno\u015Bci:\n niebieski\n zielony\nr\xF3\u017Cowy\n
+    czerwony \n \u017C\xF3\u0142ty\nlub miesi\u0105c i rok za\u0142o\u017Cania miasta
+    do kt\xF3rego prowadz\u0105 wszystkie drogi."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

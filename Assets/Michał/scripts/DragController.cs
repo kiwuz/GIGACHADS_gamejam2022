@@ -17,12 +17,10 @@ public class DragController : MonoBehaviour
         LC = FindObjectOfType<LeverController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
 
         if(Input.GetKeyDown(KeyCode.E)){
-            Debug.Log("XD");
             if(heldObject == null)
             {
                 RaycastHit hit;
@@ -30,26 +28,9 @@ public class DragController : MonoBehaviour
                     if(hit.transform.CompareTag("draggable")){
                         PickUpObject(hit.transform.gameObject);
                     }
-                    if(hit.transform.CompareTag("UI"))
-                    {
-                        hit.transform.GetComponent<TMP_InputField>().ActivateInputField();
-                        FindObjectOfType<Rotate>().enabled = false;
-                        FindObjectOfType<FirstPersonController>().enabled = false;
-                    }
-                    if (hit.transform.CompareTag("Painting"))
-                    {
-                        Debug.Log("Obraz");
-                        hit.collider.attachedRigidbody.useGravity = true;
-                        Debug.Log(hit.collider.name);
-                        //hit.rigidbody.useGravity = true;
-                        PickUpObject(hit.transform.gameObject);
-
-                    }
                     if(hit.transform.CompareTag("Lever")){
-                        Debug.Log("test");
                         LC.ChangePosition();
                     }
-
                 }
             }
             else {
@@ -61,10 +42,6 @@ public class DragController : MonoBehaviour
         if(heldObject != null){
             MoveObject();
         }
-
-
-
-
 
 
     }
@@ -80,25 +57,21 @@ public class DragController : MonoBehaviour
         }
     }
 
-
     void DropObject(){
 
         heldObjectRb.useGravity = true;
         heldObjectRb.drag = 1;
         heldObjectRb.constraints = RigidbodyConstraints.None;
-
         heldObjectRb.transform.parent = null;
         heldObject = null;
 
     }
 
     void MoveObject(){
-
         if(Vector3.Distance(heldObject.transform.position, holdArea.position) > 0.1f){
             Vector3 moveDirection = (holdArea.position -heldObject.transform.position);
             heldObjectRb.AddForce(moveDirection * pickupForce);
         }
-
 
     }
     
