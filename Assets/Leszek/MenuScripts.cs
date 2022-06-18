@@ -45,7 +45,7 @@ public class MenuScripts : MonoBehaviour
 
     public void DoorChecker()
     {
-        if (doorText.text == "180418892137")
+        if (doorText.text == "200418892137")
         {
             animation.Play();
           

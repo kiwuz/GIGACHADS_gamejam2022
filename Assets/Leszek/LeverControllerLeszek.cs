@@ -11,6 +11,7 @@ public class LeverControllerLeszek : MonoBehaviour
     private Animation animationLever;
     [SerializeField]
     private Animation animationBookshelf;
+    [SerializeField] GameObject portal;
     
     void Start()
     {
@@ -36,9 +37,11 @@ public class LeverControllerLeszek : MonoBehaviour
             animationLever.Play();
             currentPosition = 1;
             animationBookshelf.Play();
+            MapManager.Instance.ChangeWW2();
+            portal.SetActive(true);
             // transform.rotation.eulerAngles.x
             //transform.rotation = Quaternion.Euler(-45,0,0);
         }
-       
+
     }
 }
