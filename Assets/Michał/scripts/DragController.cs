@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -90,7 +91,9 @@ public class DragController : MonoBehaviour
                     }
                     if(hit.transform.CompareTag("UI"))
                     {
-                        Debug.Log("test");
+                        hit.transform.GetComponent<TMP_InputField>().ActivateInputField();
+                        FindObjectOfType<Rotate>().enabled = false;
+                        FindObjectOfType<FirstPersonController>().enabled = false;
                     }
                     
                 }
