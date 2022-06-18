@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using DG.Tweening;
 
 public class DragControllerMichau : MonoBehaviour
 {
@@ -34,8 +35,20 @@ public class DragControllerMichau : MonoBehaviour
                     if(hit.transform.CompareTag("Lever2")){
                         hit.transform.GetComponent<LeverController2>().ChangePosition();
                     }
-                    if(hit.transform.CompareTag("Lever2")){
-                        hit.transform.GetComponent<LeverController2>().ChangePosition();
+                    if(hit.transform.CompareTag("Rotatable")){
+
+                        //hit.transform.parent.Rotate(Vector3.forward, 90f);
+                        Debug.Log(hit.transform.parent.rotation.z);
+                        Debug.Log(hit.transform.rotation.z);
+                        Debug.Log(hit.transform.parent.rotation.eulerAngles.z);
+
+
+                        
+                        if(hit.transform.parent.localRotation.eulerAngles.z % 90 == 0){
+                            hit.transform.parent.DORotate(new Vector3(hit.transform.parent.rotation.eulerAngles.x,hit.transform.parent.rotation.eulerAngles.y, hit.transform.parent.rotation.eulerAngles.z+ 90),  0.5f,RotateMode.Fast);
+
+                        }
+
                     }
                 }
             }
