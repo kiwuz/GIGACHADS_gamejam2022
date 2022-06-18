@@ -36,6 +36,10 @@ public class Laser : MonoBehaviour
 
 
             if(Physics.Raycast(ray, out hit, 5000, 1)){
+                if (hit.transform.CompareTag("FinishPoint"))
+                {
+                    Debug.Log("Wygrana!");
+                }
                 position = hit.point;
                 direction = Vector3.Reflect(direction, hit.normal);
                 lr.SetPosition(i+1, hit.point);
@@ -47,6 +51,7 @@ public class Laser : MonoBehaviour
                     }
                     break;
                 }
+                
                 }
             }
     }

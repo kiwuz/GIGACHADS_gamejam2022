@@ -15,6 +15,7 @@ TagManager:
   - Mirror
   - Rotatable
   - Lever2
+  - FinishPoint
   layers:
   - Default
   - TransparentFX
