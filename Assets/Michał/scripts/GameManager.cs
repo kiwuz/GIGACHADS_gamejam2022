@@ -15,17 +15,47 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text text6;
     [SerializeField] private Text text7;
     [SerializeField] private bool puzzle2;
+    public bool puzzle1;
+    [SerializeField] private GameObject portal;
+    [SerializeField] private GameObject lamp1;
+    [SerializeField] private GameObject lamp2;
+
+    [SerializeField] private GameObject lamp3;
+
+    [SerializeField] private GameObject lamp4;
+
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+        puzzle1 = false;
         puzzle2 = false;
+        portal.SetActive(false);
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        //CheckText();
+        if(puzzle1){
+            lamp1.SetActive(true);
+            lamp2.SetActive(true);
+            lamp3.SetActive(true);
+            lamp4.SetActive(true);
+        }
+        else if(!puzzle1){
+            lamp1.SetActive(false);
+            lamp2.SetActive(false);
+            lamp3.SetActive(false);
+            lamp4.SetActive(false);
+        }
+        if (puzzle2 && puzzle1){
+            portal.SetActive(true);
+            MapManager.Instance.ChangeSciFi();
+        }
     }
 
     public void CheckText(){

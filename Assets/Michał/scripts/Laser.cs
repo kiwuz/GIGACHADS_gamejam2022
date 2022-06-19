@@ -6,6 +6,7 @@ public class Laser : MonoBehaviour
     public LineRenderer lr;
     [SerializeField] private Transform startPoint;
     [SerializeField] private bool reflectOnlyMirror;
+    [SerializeField] private GameManager GM;
     public bool startLaser;
 
 
@@ -14,7 +15,10 @@ public class Laser : MonoBehaviour
         //lr = GetComponent<LineRenderer>();
         //lr.SetPosition(0, startPoint.position);
         startLaser = false;
-
+        
+    }
+    private void Start() {
+        GM = FindObjectOfType<GameManager>(); // if
     }
 
     private void Update() {
@@ -36,9 +40,12 @@ public class Laser : MonoBehaviour
 
 
             if(Physics.Raycast(ray, out hit, 5000, 1)){
+                    GM.puzzle1 = false;
                 if (hit.transform.CompareTag("FinishPoint"))
                 {
                     Debug.Log("Wygrana!");
+                    GM.puzzle1 = true;
+
                 }
                 position = hit.point;
                 direction = Vector3.Reflect(direction, hit.normal);
