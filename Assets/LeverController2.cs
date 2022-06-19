@@ -9,6 +9,10 @@ public class LeverController2 : MonoBehaviour
     [SerializeField] private int currentPosition;
     [SerializeField] private GameObject light;
     private Animator m_animator;
+    public AudioClip leverSwitch;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +36,7 @@ public class LeverController2 : MonoBehaviour
             LSR.startLaser = true;
             light.SetActive(true);
             Debug.Log("Laser ON");
+            AudioSource.PlayClipAtPoint(leverSwitch,this.transform.position,100f);
             
 
 
@@ -42,7 +47,7 @@ public class LeverController2 : MonoBehaviour
             LSR.startLaser = false;
             Debug.Log("laser OFF");
             light.SetActive(false);
-
+            AudioSource.PlayClipAtPoint(leverSwitch,this.transform.position,100f);
 
         }
     }
