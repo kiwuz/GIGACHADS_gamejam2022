@@ -12,7 +12,9 @@ public class LeverControllerLeszek : MonoBehaviour
     [SerializeField]
     private Animation animationBookshelf;
     [SerializeField] GameObject portal;
-    
+    [SerializeField] public AudioClip leverSwitch;
+
+
     void Start()
     {
         currentPosition = 0;
@@ -39,6 +41,8 @@ public class LeverControllerLeszek : MonoBehaviour
             animationBookshelf.Play();
             MapManager.Instance.ChangeWW2();
             portal.SetActive(true);
+            AudioSource.PlayClipAtPoint(leverSwitch, this.transform.position, 100f);
+
             // transform.rotation.eulerAngles.x
             //transform.rotation = Quaternion.Euler(-45,0,0);
         }
