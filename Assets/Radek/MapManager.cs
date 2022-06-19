@@ -41,6 +41,7 @@ public class MapManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         panel.SetActive(false);
+        //GameObject.Find("PlayerCapsule").GetComponent<FirstPersonController>().RotationSpeed = 1;
 
         Debug.Log("start");
         SceneManager.LoadScene(1);
@@ -55,8 +56,10 @@ public class MapManager : MonoBehaviour
         Debug.Log("continue");
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
         ToogleMenu();
         panel.SetActive(false);
+        GameObject.Find("PlayerCapsule").GetComponent<FirstPersonController>().RotationSpeed = 1;
 
     }
 
