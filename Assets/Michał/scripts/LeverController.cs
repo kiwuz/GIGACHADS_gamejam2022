@@ -10,6 +10,7 @@ public class LeverController : MonoBehaviour
     private Animator m_animator;
     [SerializeField] private Text text;
     private GameManager GM;
+    public AudioClip leverSwitch;
     void Start()
     {
         currentPosition = 0;
@@ -32,6 +33,7 @@ public class LeverController : MonoBehaviour
             currentPosition = 1;
             text.text = "1";
             GM.CheckText();
+            AudioSource.PlayClipAtPoint(leverSwitch,this.transform.position,100f);
 
         }
         else if(currentPosition == 1){
@@ -40,6 +42,8 @@ public class LeverController : MonoBehaviour
             currentPosition = 0;
             text.text = "0";
             GM.CheckText();
+            AudioSource.PlayClipAtPoint(leverSwitch,this.transform.position,100f);
+
 
         }
     }
