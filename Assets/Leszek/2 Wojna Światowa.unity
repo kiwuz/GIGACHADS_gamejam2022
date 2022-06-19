@@ -12990,7 +12990,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Zdekoduj
 --- !u!222 &590343542
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13826,7 +13826,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29894
+  m_Name: pb_Mesh22752
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14123,7 +14123,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29940
+  m_Name: pb_Mesh22798
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15790,7 +15790,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30300
+  m_Name: pb_Mesh23164
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
