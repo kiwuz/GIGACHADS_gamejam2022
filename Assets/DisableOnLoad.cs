@@ -14,7 +14,7 @@ public class DisableOnLoad : MonoBehaviour
     [SerializeField] Laser cylinderRome;
     [SerializeField] Laser cylinderWW2;
     [SerializeField] Laser cylinderSciFi;
-
+    [SerializeField] GameObject finalPortal;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +50,7 @@ public class DisableOnLoad : MonoBehaviour
 
     private void ActivateLastPortal()
     {
-        Debug.Log("aktywuje ostatni portal");
+        finalPortal.SetActive(true);
+        //Debug.Log("aktywuje ostatni portal");
     }
 }
