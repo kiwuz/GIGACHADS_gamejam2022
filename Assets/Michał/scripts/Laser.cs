@@ -16,9 +16,11 @@ public class Laser : MonoBehaviour
         //lr.SetPosition(0, startPoint.position);
         startLaser = false;
         
+        
     }
     private void Start() {
         GM = FindObjectOfType<GameManager>(); // if
+        //if (GM == null) GM = new GameManager();
     }
 
     private void Update() {
@@ -40,11 +42,12 @@ public class Laser : MonoBehaviour
 
 
             if(Physics.Raycast(ray, out hit, 5000, 1)){
-                    GM.puzzle1 = false;
+                if(GM!=null) GM.puzzle1 = false;
+
                 if (hit.transform.CompareTag("FinishPoint"))
                 {
                     Debug.Log("Wygrana!");
-                    GM.puzzle1 = true;
+                    if (GM != null) GM.puzzle1 = true;
 
                 }
                 position = hit.point;
