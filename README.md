@@ -1,4 +1,4 @@
-# GRYF GAME JAM 2022 | 17-19.06.2022 | DONE IN 30 HOURS
+# GRYF JAM 2022 | 17-19.06.2022 | DONE IN 30 HOURS
 
 ![gigachadss](https://user-images.githubusercontent.com/49866616/176200778-f20f078f-ff2a-4da9-989b-50bd5712ce90.png)
 
