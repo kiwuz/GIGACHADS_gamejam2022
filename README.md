@@ -1,6 +1,6 @@
 # GRYF JAM 2022 | 17-19.06.2022 | DONE IN 30 HOURS
 
-![gigachadss](https://user-images.githubusercontent.com/49866616/176200778-f20f078f-ff2a-4da9-989b-50bd5712ce90.png)
+<img src ="https://user-images.githubusercontent.com/49866616/176200778-f20f078f-ff2a-4da9-989b-50bd5712ce90.png" width ="800" height ="400" />
 
 ## ABOUT THE GAME
 
@@ -12,10 +12,13 @@ The game is about going through several escape rooms. All rooms and puzzles refl
 
 In search of my missing father, I make timeless journeys and we are looking for a key by solving puzzles in various rooms. All this to be able to save him.
 
-![Recording 2022-06-28 at 16 51 03](https://user-images.githubusercontent.com/49866616/176210324-74ea6fff-3d7c-4ca8-95cf-cdcf58f378a1.gif)
+<img src ="https://user-images.githubusercontent.com/49866616/176210324-74ea6fff-3d7c-4ca8-95cf-cdcf58f378a1.gif" width = "500" height ="300" />
 
 ## ABOUT GRYF GAME JAM
+<img src ="https://user-images.githubusercontent.com/49866616/176227834-43eeada0-75e6-441e-af38-63fd49b14cca.png" width ="500" height ="300" />
+
 THE EVENT HAS BEEN TAKEN ON 2022 JUNE 17-19 IN POLAND, SZCZECIN. 80 PARTICIPANTS CREATED 16 GAMES IN TWO DAYS. THE TOPIC OF THIS GAME JAM WAS "TIMELESS JOURNEYS"
+[OFFICIAL GRYF GAME JAM SITE](http://www.gryfjam.pl/)
 
 ## MADE BY
 
