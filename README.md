@@ -6,7 +6,7 @@
 
 GIGACZADS is a game made during GRYF GAME JAM 2022 in something about 30 hours.
 
-The game is about going through several escape rooms. All rooms and puzzles reflect diffrent times. There is a room referring to very distant times, Roman Times, World War and distant future ( sci fi room).
+The game is about going through several escape rooms. All rooms and puzzles reflect diffrent times. There is a room referring to distant times, Roman Times, World War and distant future ( sci fi room).
 
 ### GAME DESCRIPTION
 
