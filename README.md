@@ -27,8 +27,8 @@ THE EVENT HAS BEEN TAKEN ON 2022 JUNE 17-19 IN POLAND, SZCZECIN. 80 PARTICIPANTS
 
 ## BUILD WITH
 
-* UNITY 
-* C#
+![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white) <br />
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
 
 ## YOUTUBE GAMEPLAY
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/JygR2Si9JHQ/0.jpg)](https://www.youtube.com/watch?v=JygR2Si9JHQ)
